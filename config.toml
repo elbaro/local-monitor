@@ -1,0 +1,14 @@
+[Finder]
+name="Finder"
+
+[Alacritty]
+name="alacritty"
+recovery = {cmd="alacritty"}
+
+[Docker]
+exe='dockerd'
+recovery = {cmd="sudo service docker start"}
+
+[server1]
+exe='python -m http_server'
+recovery = {cmd="python -m http_server", cwd="/var/www"}
